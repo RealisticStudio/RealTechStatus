@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RealTech Studio Status</title>
+
+    <meta name="description" content="RealTech Studio Service Status Dashboard">
+    <meta name="theme-color" content="#09090b">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="title-section">
+            <div class="brand">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="#3b82f6" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M2 17L12 22L22 17" stroke="#3b82f6" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M2 12L12 17L22 12" stroke="#3b82f6" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+                <h1>RealTech Status</h1>
+            </div>
+            <div class="status-badge" id="global-status">
+                <div class="pulse-dot"></div>
+                <span id="global-status-text">Systems Operational</span>
+            </div>
+        </div>
+        <p class="subtitle">監控中 - 每 10 秒更新一次自動監控數據</p>
+    </header>
+
+    <main class="dashboard-grid" id="dashboard">
+        <!-- Cards injected by JS -->
+    </main>
+
+    <footer>
+        <p>&copy; 2026 RealTech Studio Ltd.</p>
+    </footer>
+
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>
